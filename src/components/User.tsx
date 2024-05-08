@@ -41,7 +41,7 @@ const User = () => {
             <div style={{color: "red"}}>
                 {errorMessage}
             </div>
-            <Link to={"/users"}>Back to users</Link>
+            <Link to={"/users/"}>Back to users</Link>
         </div>
         )
     } else {

@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Users from "./components/Users";
 import User from "./components/User";
 import NotFound from "./components/NotFound";
+import UserList from "./components/UserList";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
             <Routes>
               <Route path="/users" element={<Users />} />
               <Route path="/user/:id" element={<User />} />
+              <Route path="/users-props" element={<UserList/>}/>
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
